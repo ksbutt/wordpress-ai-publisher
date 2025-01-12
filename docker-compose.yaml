@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: typescript_workflow_app
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - GOOGLE_SHEETS_API_KEY=${GOOGLE_SHEETS_API_KEY}
+      - GOOGLE_SHEET_ID=${GOOGLE_SHEET_ID}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WORDPRESS_URL=${WORDPRESS_URL}
+      - WORDPRESS_USER=${WORDPRESS_USER}
+      - WORDPRESS_PASSWORD=${WORDPRESS_PASSWORD}
