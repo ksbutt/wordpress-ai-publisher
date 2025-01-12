@@ -32,25 +32,6 @@ const processWorkflow = async (): Promise<void> => {
           tags: result.tags,
           focus_keyphrase: result.focus_keyword
         };
-        // const post = {
-        //   title: "What If My Baby Won't Burp After Feeding? A Comprehensive Guide",
-        //   content: "This is my post content",
-        //   meta_title: "Baby Not Burping After Feed? Expert Tips & Advice",
-        //   meta_description: "Is your baby not burping after feeding? Learn why and what to do. Get expert advice, tips, and techniques to help your little one.",
-        //   tags: [
-        //     "baby burping",
-        //     "baby not burping",
-        //     "infant burping",
-        //     "burping techniques",
-        //     "newborn burping",
-        //     "baby feeding",
-        //     "gas in babies",
-        //     "baby discomfort",
-        //     "infant care",
-        //     "post-feeding care"
-        //   ],
-        //   focus_keyphrase: "what if my baby won't burp after feeding"
-        // };
 
         await createWordPressPost(post);
       }
