@@ -1,10 +1,3 @@
-Here’s the updated `README.md` file based on your final `index.ts` file. This reflects the workflow of fetching rows from Google Sheets, generating content with AI, posting it to WordPress, and updating the sheet.
-
----
-
-### Updated `README.md`
-
-```markdown
 # AI Content Workflow Automation
 
 AI Content Workflow Automation is a Node.js and TypeScript-based tool designed to streamline the process of creating, managing, and publishing content to WordPress using AI. The tool integrates with Google Sheets to track content processing and updates the sheet once content is published successfully.
